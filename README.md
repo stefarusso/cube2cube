@@ -1,0 +1,1 @@
+Tinker potential fitting required electronic density grid. Psi4 can be used to produce the value of the density in the file grid_esp.dat. the coordinates of the grid are in the file grid.dat produced by Poledit 
