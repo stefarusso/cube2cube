@@ -5,11 +5,11 @@ def main():
     correct thinker cube format (different from gaussian 
     cube)
     """     
-    espname="grid_esp.dat"
-    gridname="grid.dat"
-    cubename="cubefile.cube"
-    espmethod="MP2"
-    espbasisset="aug-cc-pVTZ"
+    espname=str(input('ESP grid filename [grid_esp.dat]: ').strip() or "grid_esp.dat")
+    gridname=str(input('grid coordinates filename [grid.dat]: ').strip() or "grid.dat")
+    cubename=str(input('output filename [cubefile.cube]: ').strip() or "cubefile.cube")
+    espmethod=str(input('ESP method [MP2]: ').strip() or "MP2")
+    espbasisset=str(input('ESP basis set [aug-cc-pVTZ]: ').strip() or "aug-cc-pVTZ")
 
     temp=open(espname,'r')
     results=temp.readlines()
